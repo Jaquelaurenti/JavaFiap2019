@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteErros<Excecoes>",
+            "request": "launch",
+            "mainClass": "Tratamentos.TesteErros",
+            "projectName": "Excecoes"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteEnum<ExercicioEnum>",
+            "request": "launch",
+            "mainClass": "Exercicio.TesteEnum",
+            "projectName": "ExercicioEnum"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteContas<JavaFiap2019>",
+            "request": "launch",
+            "mainClass": "ex01.TesteContas",
+            "projectName": "JavaFiap2019"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteContas<JavaFiap2019>(1)",
+            "request": "launch",
+            "mainClass": "ex02.TesteContas",
+            "projectName": "JavaFiap2019"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteContas<JavaFiap2019>(2)",
+            "request": "launch",
+            "mainClass": "ex04.TesteContas",
+            "projectName": "JavaFiap2019"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteFuncionario<JavaFiap2019>",
+            "request": "launch",
+            "mainClass": "heranca.TesteFuncionario",
+            "projectName": "JavaFiap2019"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteFuncionario<JavaFiap2019>(1)",
+            "request": "launch",
+            "mainClass": "interfaces.TesteFuncionario",
+            "projectName": "JavaFiap2019"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TesteFuncionario<JavaFiap2019>(2)",
+            "request": "launch",
+            "mainClass": "interfaces.heranca.TesteFuncionario",
+            "projectName": "JavaFiap2019"
+        }
+    ]
+}

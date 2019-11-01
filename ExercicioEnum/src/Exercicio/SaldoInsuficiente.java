@@ -1,4 +1,4 @@
-package Tratamentos;
+package Exercicio;
 
 @SuppressWarnings("serial")
 public class SaldoInsuficiente extends Exception {
