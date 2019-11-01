@@ -11,14 +11,20 @@ public class TesteEnum {
 		double valordeposito = Double.valueOf(JOptionPane.showInputDialog("Informe o valor do deposito para a Conta Bancaria do(a) " + contaBancaria.getNome()));
 		contaBancaria.deposita(valordeposito);
 
-		ClassificacaoClientes.POTENCIAL.isCompatible(contaBancaria);
-		ClassificacaoClientes.MEDIO.isCompatible(contaBancaria);
-		ClassificacaoClientes.BAIXO.isCompatible(contaBancaria);
+		if(ClassificacaoClientes.POTENCIAL.isCompatible(contaBancaria)){
+		System.out.println("Cliente POTENCIAL");
+		}
+		if(ClassificacaoClientes.MEDIO.isCompatible(contaBancaria)){
+			System.out.println("Cliente MEDIO");
+		}
+		if(ClassificacaoClientes.BAIXO.isCompatible(contaBancaria)){
+			System.out.println("Cliente BAIXO");
+		}
 
 
-		ContaBancaria contaBancaria1 = new ContaBancaria("Juliana ", "Rua B", "123456", LocalDate.of(2010, 11, 24));
+		/*ContaBancaria contaBancaria1 = new ContaBancaria("Juliana ", "Rua B", "123456", LocalDate.of(2010, 11, 24));
 		boolean cpf = contaBancaria.equals(contaBancaria1);
-		System.out.println("CPF duplicado para a o Cliente: " + contaBancaria1.getNome());
+		System.out.println("CPF duplicado para a o Cliente: " + contaBancaria1.getNome());*/
 
 
 	}

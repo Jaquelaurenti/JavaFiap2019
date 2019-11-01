@@ -2,7 +2,9 @@ package Exercicio;
 
 public enum ClassificacaoClientes {
 	
-	POTENCIAL(400000,500000), MEDIO(200000,400000), BAIXO(0,200000);
+	POTENCIAL(400001,500000),
+	MEDIO(200001,400000),
+	BAIXO(0,200000);
 	
 	private double faixaInicial;
 	private double faixaFinal;
@@ -14,14 +16,11 @@ public enum ClassificacaoClientes {
 	
 	public boolean isCompatible(ContaBancaria conta){
     	if (conta.getSaldo() >= faixaInicial && conta.getSaldo() <= faixaFinal){
-    		System.out.println(this.name() + " Renda compatível. Saldo: " + conta.getSaldo());
     		return true;
     	}
     	else
     	{
-    		System.out.println(this.name() + " Renda compatível. Saldo: " + conta.getSaldo());
     		return false;
     	}
     }
-
 }
