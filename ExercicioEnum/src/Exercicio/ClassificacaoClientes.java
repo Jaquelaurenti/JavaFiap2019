@@ -13,7 +13,16 @@ public enum ClassificacaoClientes {
 		this.faixaInicial = faixaInicial;
 		this.faixaFinal = faixaFinal;
 	}
-	
+
+	public boolean validaFaixaFinal(ContaBancaria conta){
+        if (conta.getSaldo() > faixaFinal){
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 	public boolean isCompatible(ContaBancaria conta){
     	if (conta.getSaldo() >= faixaInicial && conta.getSaldo() <= faixaFinal){
     		return true;
